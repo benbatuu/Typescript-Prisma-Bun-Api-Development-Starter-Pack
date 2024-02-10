@@ -1,0 +1,12 @@
+generator client {
+  provider        = "prisma-client-js"
+  output          = "./generated/client"
+  previewFeatures = ["multiSchema"]
+  binaryTargets   = ["native", "darwin", "debian-openssl-1.1.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  schemas  = ["example1", "example2"] // Database Schemaları "example", "example2" gibi ekleyebilirsiniz.
+}

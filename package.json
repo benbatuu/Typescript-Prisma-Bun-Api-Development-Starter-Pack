@@ -1,0 +1,27 @@
+{
+  "scripts": {
+    "start": "bun --hot run src/index.ts"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts --environment development"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.7.0",
+    "@prisma/client": "^5.9.1",
+    "@types/node": "^20.11.17",
+    "hono": "^4.0.0",
+    "prisma": "^5.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "tsx": "^3.12.2",
+    "@types/bun": "latest"
+  },
+  "name": "api-development-starter-pack",
+  "module": "index.ts",
+  "type": "module",
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
